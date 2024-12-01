@@ -24,10 +24,9 @@ tk.title("Преобразователь чисел")
 var = IntVar()
 
 Label(tk, text="Введите число:").grid(row=0, column=0)
-e_input = Entry(tk, textvariable=var)  # Поле ввода для числа
+e_input = Entry(tk, textvariable=var) 
 e_input.grid(row=0, column=1)
 
-# Для вывода результатов
 hex_output = StringVar()
 oct_output = StringVar()
 bin_output = StringVar()
@@ -41,7 +40,6 @@ Label(tk, textvariable=oct_output).grid(row=3, column=1)
 Label(tk, text="2-ричное:").grid(row=4, column=0)
 Label(tk, textvariable=bin_output).grid(row=4, column=1)
 
-# Кнопки перевода
 btn_h = Button(tk, text="16-ричное", command=h)
 btn_h.grid(row=1, column=0)
 
