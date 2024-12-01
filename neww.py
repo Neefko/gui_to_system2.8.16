@@ -4,25 +4,25 @@ from tkinter import *
 def h():
     a = var.get()
     answer = hex(a)[2:]
-    hex_output.set(answer)  # Устанавливаем текст в переменной
+    hex_output.set(answer) 
 
 # Восьмиричная
 def o():
     a = var.get()
     answer = oct(a)[2:]
-    oct_output.set(answer)  # Устанавливаем текст в переменной
+    oct_output.set(answer) 
 
 # Двоичная
 def b():
     a = var.get()
     answer = bin(a)[2:]
-    bin_output.set(answer)  # Устанавливаем текст в переменной
+    bin_output.set(answer)  
 
 tk = Tk()
 tk.title("Преобразователь чисел")
 
-# Поле ввода
 var = IntVar()
+
 Label(tk, text="Введите число:").grid(row=0, column=0)
 e_input = Entry(tk, textvariable=var)  # Поле ввода для числа
 e_input.grid(row=0, column=1)
